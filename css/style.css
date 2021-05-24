@@ -1,0 +1,13 @@
+body{
+	
+	background-color: silver;
+	padding:10px;
+	font : Century;
+	color:blue;
+
+}
+
+#form label span.mandatory{
+	opacity: 0;
+	color:#777;
+}

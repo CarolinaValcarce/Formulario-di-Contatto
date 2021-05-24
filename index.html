@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+		<title>Formulario di contatto</title>
+		<meta charset="utf-8">
+		
+	 	<!-- <style  type="text/css" >body{background-color:silver; font-family:Century; color:blue}</style> -->
+	 	<link rel="stylesheet" href="css/style.css">
+		
+   </head>
+   <body>
+	<h1 align="center"><i>Contatto dello Studio d'Avvocati</i></h1>
+	<h2>Formulario di contatto:</h2>
+	<fieldset id="form">
+	   <form method="POST" action="output.php" onsubmit="return methodForm.FormValidation()">
+
+				<p><label for="user">Usuario: <span class="mandatory"> *Campo obbligatorio </span></label> 
+				<input type="text" id="user" class="validate" size="80"  placeholder="Scrive nome d'usuario con minimo di 3 caratteri e massimo di 8." required></p>
+
+				<p><label for="password">Password:<span class="mandatory">*Campo obbligatorio </span></label>
+		 		<input type="password" id="password" class="validate"  size="79" placeholder="La password deve avere tra 8 e 14 caratteri, con almeno 1 numero, maiuscola e minuscola." maxlength="14" required></p>
+
+				<p><label for="email">Email: <span class="mandatory">*Campo obbligatorio </span></label>
+		 		<input type="text" id="email" class="validate" size="82" placeholder="Scrive la tua email correttamente" required ></p>
+				<br/>
+
+				<p> Nome completo: 
+				<input type="text" id="name" name="name" size="71"></p>
+
+		 		<p> Servizio:
+		 		<input type="radio" name="customer" value="1">Primo contatto
+		 		<input type="radio" name="customer" value="2">Ormai cliente </p>
+
+		 		
+
+				<p><label for="message"> Messaggio:</label>
+		 		<p> <textarea name="Comments" cols=83 rows=8 size="65"></textarea></p>
+
+		 		<p><input type="checkbox" id="conditions" value="1" checked=""> Dichiaro di non
+				 inviare dettagli confidenziali attraverso questo messaggio </p> 
+				
+		 		<!-- <button type="submit" id="Send"> Inviare </button>  -->
+		 		<p><label id="Send"><span></span></label> 
+				<input type="submit" value="Inviare"></p>
+
+ 	   </form>
+ 	</fieldset>
+ 	<script src="js/form.js"></script>
+ 	</body>
+</html>
+ 
